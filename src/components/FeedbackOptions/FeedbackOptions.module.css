@@ -1,0 +1,30 @@
+.button {
+    width: 125px;
+    height: 50px;
+    background-color: rgb(235, 211, 211);
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 25px;
+}
+.button:not(:last-child) {
+    margin-right: 30px;
+}
+.buttonGood, 
+.buttonNeutral, 
+.buttonBad {
+    composes: button;
+}
+.buttonGood:hover,
+.buttonGood:focus {
+    background-color: rgb(63, 131, 63);
+}
+.buttonNeutral:hover,
+.buttonNeutral:focus {
+    background-color: rgb(236, 174, 57);
+}
+.buttonBad:hover,
+.buttonBad:focus {
+    background-color: rgb(221, 66, 66);
+}
