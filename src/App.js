@@ -46,9 +46,7 @@ class App extends Component {
         <Section title="Statistics">
           {this.countTotalFeedback() ? (
             <Statistics
-              good={this.state.good}
-              neutral={this.state.neutral}
-              bad={this.state.bad}
+              {...this.state}
               total={this.countTotalFeedback}
               positivePercentage={this.coutnPositiveFeedbackPercentage}
             />
